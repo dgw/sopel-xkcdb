@@ -15,7 +15,11 @@ def xkcdb(bot, trigger):
         page = html.parse('http://www.xkcdb.com/%s' % qid).getroot()
     else:  # random quote
         page = html.parse('http://www.xkcdb.com/random1').getroot()
-    quoteblock = page.cssselect('p.quoteblock')[0]
+    try:
+        quoteblock = page.cssselect('p.quoteblock')[0]
+    except IndexError:
+        bot.say("XKCDB quote %snot found!" % ("#%s " % qid) if qid else "")
+        return
     header = quoteblock.cssselect('span.quotehead')[0]
     quote = quoteblock.cssselect('span.quote')[0]
     for br in quote.xpath('*//br'):
