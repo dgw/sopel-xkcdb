@@ -3,7 +3,7 @@ xkcdb.py - Pull a random (or specific) quote from the XKCDB
 Copyright 2015 dgw
 """
 
-from willie import module, formatting
+from sopel import module, formatting
 from lxml import html
 import re
 

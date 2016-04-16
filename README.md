@@ -1,13 +1,13 @@
-# willie-xkcdb
+# sopel-xkcdb
 
-XKCDB quotes module for willie/sopel IRC bot
+XKCDB quotes module for sopel IRC bots
 
 ## Dependencies
 
 Depends on:
 * `cssselect`
-* `lxml` (required by core willie modules)
-* `re` (required by core willie modules)
+* `lxml` (required by core sopel modules)
+* `re` (required by core sopel modules)
 
 ## Commands
 
