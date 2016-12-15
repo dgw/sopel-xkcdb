@@ -32,10 +32,10 @@ def xkcdb(bot, trigger):
     url = 'http://www.xkcdb.com/%s' % qid
 
     bot.say("XKCDB quote #%s (%s/%s) - %s" % (qid, up, down, url))
-    if len(lines) <= 12:
+    if len(lines) <= 6:
         for line in lines:
             bot.say(line)
     else:
-        for line in lines[:8]:
+        for line in lines[:3]:
             bot.say(line)
         bot.say("[Quote truncated. Visit %s to read the rest.]" % url)
