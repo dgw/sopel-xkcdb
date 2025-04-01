@@ -1,0 +1,6 @@
+## Changelog
+
+### 0.1.0
+
+First proper release of `sopel-xkcdb`, modernized for Sopel 8 running atop
+Python 3 and converted from a standalone `.py` file into a real package.
